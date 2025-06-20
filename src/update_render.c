@@ -87,18 +87,19 @@ void update_simulation(simulation_t *sim, float delta_time)
                 continue;
             }
             
+            /*
             if (check_collision(a1, a2)) {
                 if (a1->type == BOMB || a2->type == BOMB) {
-                    start_explosion(a1);
-                    start_explosion(a2);
+                    //start_explosion(a1);
+                    //start_explosion(a2);
                 } else {
                     if (!is_in_control_area(a1, sim->towers) && 
                         !is_in_control_area(a2, sim->towers)) {
-                        start_explosion(a1);
-                        start_explosion(a2);
+                        //start_explosion(a1);
+                        //start_explosion(a2);
                     }
                 }
-            }
+            }*/
             
             a2 = a2->next;
         }
@@ -163,6 +164,7 @@ void render_simulation(simulation_t *sim)
     
     sfRenderWindow_display(sim->window);
 }
+
 
 int check_collision(aircraft_t *a1, aircraft_t *a2)
 {

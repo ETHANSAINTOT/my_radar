@@ -203,6 +203,7 @@ void process_events(simulation_t *sim)
     }
 }
 
+/*
 void start_explosion(aircraft_t *entity)
 {
     entity->exploding = 1;
@@ -214,4 +215,4 @@ void start_explosion(aircraft_t *entity)
     // Centrer l'explosion sur la position actuelle
     sfFloatRect bounds = sfSprite_getLocalBounds(entity->sprite);
     sfSprite_setOrigin(entity->sprite, (sfVector2f){bounds.width / 2, bounds.height / 2});
-}
+}*/

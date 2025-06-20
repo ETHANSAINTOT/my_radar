@@ -95,7 +95,7 @@ void render_simulation(simulation_t *sim);
 aircraft_t *create_aircraft(sfVector2f departure, sfVector2f arrival, 
                            float speed, int delay, sfTexture *texture, entity_type_t type);
 tower_t *create_tower(sfVector2f position, float radius, sfTexture *texture);
-void start_explosion(aircraft_t *entity);
+//void start_explosion(aircraft_t *entity);
 int check_collision(aircraft_t *a1, aircraft_t *a2);
 int is_in_control_area(aircraft_t *aircraft, tower_t *towers);
 int has_reached_destination(aircraft_t *aircraft);
